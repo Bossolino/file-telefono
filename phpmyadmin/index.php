@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+ini_set('display_errors', 0);
+
 use PhpMyAdmin\Common;
 use PhpMyAdmin\Routing;
 
