@@ -25,9 +25,11 @@ $i = 0;
  */
 $i++;
 /* Authentication type */
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['user'] = 'root';
-$cfg['Servers'][$i]['password'] = '';
+$cfg['Servers'][$i]['auth_type'] = 'config';          // Usa login automatico
+$cfg['Servers'][$i]['user'] = 'root';                 // Utente MySQL
+$cfg['Servers'][$i]['password'] = 'root';  // Sostituisci con la tua vera password
+$cfg['Servers'][$i]['host'] = '127.0.0.1';            // Usa TCP/IP, evita socket
+$cfg['Servers'][$i]['connect_type'] = 'tcp';          // Connessione via TCP
 /* Server parameters */
 $cfg['Servers'][$i]['host'] = '0.0.0.0';
 $cfg['Servers'][$i]['compress'] = false;
